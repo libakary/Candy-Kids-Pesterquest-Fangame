@@ -1,0 +1,24 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/demoscript.rpy", line 50, in script
+    return(value="volumes")
+SyntaxError: invalid syntax (demoscript.rpy, line 50)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/demoscript.rpy", line 50, in script
+    return(value="volumes")
+  File "renpy/ast.py", line 1507, in execute
+    renpy.store._return = renpy.python.py_eval(self.expression)
+  File "renpy/python.py", line 2247, in py_eval
+    code = py_compile(code, 'eval')
+  File "renpy/python.py", line 835, in py_compile
+    raise e
+SyntaxError: invalid syntax (demoscript.rpy, line 50)
+
+Windows-10-10.0.19041
+Ren'Py 7.4.4.1439
+PQ 1.0
+Mon May  3 23:38:03 2021
